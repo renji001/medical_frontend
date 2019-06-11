@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 		<div class="showPic">
-			<div class="left" style="200px">
+			<div class="left" style="width:200px">
 				<ul>
 					<li>通知公告</li>
 					<li>协会动态</li>

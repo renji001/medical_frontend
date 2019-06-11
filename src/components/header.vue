@@ -16,9 +16,7 @@
 						<li @mouseover='erweimaShow=true' @mouseout='erweimaShow=false'><img style="width: 20px;margin-top: 5px;" src="/static/images/erweima.png" alt=""></li>
 					</ul>
 					 <transition name="el-zoom-in-center">
-						<div>
 							<img v-show="erweimaShow" class="transition-box" style="position: absolute;right: 0px;top: 30px;z-index: 100; width: 100px;margin-top: 5px;" src="/static/images/ceshi.jpg" alt="">
-						</div>
 					</transition>
 				</div>
 			</div>
@@ -75,6 +73,7 @@
 	.tabDetailInner{
 		width: 1200px;
 		margin: 0px auto;
+    overflow: hidden;
 	}
 	.tabDetail .left{
 		float: left;

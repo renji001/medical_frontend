@@ -4,7 +4,9 @@
         <el-tab-pane label="网站首页">
           <content-index></content-index>
         </el-tab-pane>
-        <el-tab-pane label="关于协会">消息中心</el-tab-pane>
+        <el-tab-pane label="关于协会">
+          <about-xiehui></about-xiehui>
+        </el-tab-pane>
         <el-tab-pane label="组织机构">
           <org-content></org-content>
         </el-tab-pane>
@@ -23,11 +25,13 @@
 <script>
    import ContentIndex from './index/'
    import OrgContent from './orgContent/'
+   import AboutXiehui from './aboutXiehui/index'
     export default {
       name: "content",
       components: {
         ContentIndex,
-        OrgContent
+        OrgContent,
+        AboutXiehui
       },
     }
 </script>
