@@ -1,16 +1,35 @@
 <template>
   <div class="container">
-    <el-carousel indicator-position="outside">
-      <el-carousel-item v-for="item in 4" :key="item">
-        <h3>{{ item }}</h3>
-      </el-carousel-item>
-    </el-carousel>
+		<div class="showPic">
+			<div class="left" style="200px">
+				<ul>
+					<li>通知公告</li>
+					<li>协会动态</li>
+					<li>会员服务</li>
+					<li>专业委员会</li>
+					<li>学术交流</li>
+					<li>科普宣传</li>
+					<li>癌症康复</li>
+				</ul>
+			</div>
+			<div class="left" style="width: 800px;margin-right: 0px;">
+				<el-carousel indicator-position="outside">
+					<el-carousel-item v-for="item in picList" :key="item.id">
+						<img :src="item.img" alt="" style="width: 100%;height: 100%;">
+					</el-carousel-item>
+				</el-carousel>
+			</div>
+			<div class="left" style="width: 199px;height:300px;background: #eee;margin-right: 0px;">
+				
+			</div>
+		</div>
+   
     <div class="message">
       <div class="news">
         <div class="title">
           <div class="left">
-            <span>最新公告</span>
-            <span>Latest Announcement</span>
+            <span>学术聚焦</span>
+            <span>Academic Focus</span>
           </div>
           <div class="right">
             <span class="more">更多</span>
@@ -20,19 +39,19 @@
           <ul>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
           </ul>
         </div>
@@ -40,8 +59,8 @@
       <div class="dongtai">
         <div class="title">
           <div class="left">
-            <span>协会动态</span>
-            <span>Hospital News</span>
+            <span>最新动态</span>
+            <span>News</span>
           </div>
           <div class="right">
             <span class="more">更多</span>
@@ -51,237 +70,135 @@
           <ul>
             <li class="ell">
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
             <li>
               <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
+              <span class="mesgTitle">河南省消化医学学会2019年护士规范化培训招收简章</span>
             </li>
           </ul>
         </div>
       </div>
       </div>
-    <div class="vipMessage">
-      <div class="vipMember">
-        <div class="title">
-          <div class="left">
-            <span>会员单位</span>
-            <span>Latest Announcement</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="vipServer">
-        <div class="title">
-          <div class="left">
-            <span>会员服务</span>
-            <span>Latest Announcement</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="vipCommittee">
-        <div class="title">
-          <div class="left">
-            <span>专业委员会</span>
-            <span>Hospital News</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="zhuren">
-      <template>
-        <el-carousel :interval="4000" type="card" height="200px">
-          <el-carousel-item v-for="item in 6" :key="item">
-            <h3>{{ item }}</h3>
-          </el-carousel-item>
-        </el-carousel>
-      </template>
+			<div class="jieshao">
+				<span>主任委员介绍</span>
+				<span>更多</span>
+			</div>
+      <div class="detail">
+				<div class="block" v-for="item in zhurenList" :key="item.id">
+					<img :src="item.img" alt="">
+					<span>{{item.name}}</span>
+				</div>
+			</div>
     </div>
-    <div class="vipMessage">
-      <div class="vipMember">
-        <div class="title">
-          <div class="left">
-            <span>会员单位</span>
-            <span>Latest Announcement</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-            <li>
-              <span class="mesgTitle">河南省食管癌重点实验室</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="vipServer">
-        <div class="title">
-          <div class="left">
-            <span>会员服务</span>
-            <span>Latest Announcement</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="vipCommittee">
-        <div class="title">
-          <div class="left">
-            <span>专业委员会</span>
-            <span>Hospital News</span>
-          </div>
-          <div class="right">
-            <span class="more">更多</span>
-          </div>
-        </div>
-        <div class="newsContent">
-          <ul>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-            <li class="ell">
-              <span class="time">2019-04-12</span>
-              <span class="mesgTitle">河南省人民医院2019年护士规范化培训招收简章</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="yingyin">
+			<div class="jieshao">
+				<span>影音协会</span>
+				<span>更多</span>
+			</div>
+      <div class="detail">
+				<ul>
+					<li>
+						<img src="/static/images/yingyin1.jpeg" alt="">
+					</li>
+					<li>
+						<img src="/static/images/yingyin2.jpeg" alt="">
+					</li>
+					<li>
+						<img src="/static/images/yingyin3.jpeg" alt="">
+					</li>
+					<li>
+						<img src="/static/images/yingyin4.jpeg" alt="">
+					</li>
+				</ul>
+			</div>
     </div>
-    <div class="zhuren">
-      <template>
-        <el-carousel :interval="4000" type="card" height="200px">
-          <el-carousel-item v-for="item in 6" :key="item">
-            <h3>{{ item }}</h3>
-          </el-carousel-item>
-        </el-carousel>
-      </template>
+  <div class="friend">
+  		<div class="jieshao">
+  			<span>友情链接</span>
+  		</div>
+      <div class="detail">
+  			<ul>
+  				<li>
+						<a href="http://fcc.zzu.edu.cn">郑州大学第一附属医院</a>
+  				</li>
+  				<li>
+						<a href="http://www.henancishan.org/index.html">河南省慈善总会</a>
+  				</li>
+  			</ul>
+  		</div>
     </div>
-    <div class="cooperation">
-
-    </div>
-  </div>
+	</div>
+	
 </template>
 
 <script>
   export default {
-    name: "index"
+    name: "index",
+		data() {
+      return {
+        picList:[{
+					id: 1,
+					img:'/static/images/banner.jpeg',
+				}],
+				zhurenList:[{
+					id: 1,
+					img:'/static/images/zhangshuijun.jpeg',
+					name: '会长张水军'
+				},
+				{
+					id: 2,
+					img:'/static/images/guowenzhi.jpeg',
+					name: '副会长郭文治'
+				},
+				{
+					id: 3,
+					img:'/static/images/zhangyanrui.jpeg',
+					name: '副会长张延瑞'
+				},
+				{
+					id: 4,
+					img:'/static/images/jinjianjun.jpeg',
+					name: '副会长金建军'
+				}
+				]
+      };
+    },
+		methods:{
+			getDate(){
+				var maDate = new Date()
+			}
+		}
   }
 </script>
 
 <style scoped>
+
+	.showPic{
+		overflow: hidden;
+	}
+	.showPic .left{
+		float: left;
+		margin-right: 40px;
+	}
+	.showPic .left li{
+		border: 1px solid #2a8d7e50;
+		line-height: 30px;
+		width: 150px;
+		font-size: 15px;
+		border-radius: 1px;
+		margin-bottom: 13px;
+	}
+
   .el-carousel__item h3 {
     color: #475669;
     font-size: 18px;
@@ -312,14 +229,13 @@
 
   .news .title, .dongtai .title {
     overflow: hidden;
-    background: url("/static/images/ico_025.jpg") 20px 20px no-repeat;
     height: 80px;
     /*line-height: 50px;*/
   }
 
   .news .title .left, .dongtai .title .left {
     float: left;
-    margin-left: 90px;
+    margin-left: 20px;
   }
 
   .news .title .left span:nth-child(1), .dongtai .title .left span:nth-child(1) {
@@ -332,7 +248,8 @@
   .news .title .left span:nth-child(2), .dongtai .title .left span:nth-child(2) {
     font-size: 12px;
     display: block;
-    color: #409EFF;
+    color: #2a8d7e;
+		text-align: left;
   }
 
   .news .title .right, .dongtai .title .right {
@@ -362,64 +279,6 @@
     padding-right: 10px;
   }
 
-  .vipMessage{
-    margin-top: 30px;
-    overflow: hidden;
-  }
-
-  .vipMember{
-    width: 300px;
-    float: left;
-    background: #f1f1f1;
-  }
-  .vipServer{
-    width: 400px;
-    float: left;
-    background: #f1f1f1;
-    margin-left: 30px;
-  }
-  .vipCommittee{
-    width: 400px;
-    float: left;
-    background: #f1f1f1;
-    margin-left: 30px;
-  }
-  .vipMessage .title {
-    overflow: hidden;
-    background: url("/static/images/ico_025.jpg") 20px 20px no-repeat;
-    height: 80px;
-    /*line-height: 50px;*/
-  }
-  .vipMessage  .left {
-    float: left;
-    margin-left: 90px;
-  }
-
-  .vipMessage .left span:nth-child(1) {
-    font-size: 15px;
-    display: block;
-    margin-top: 25px;
-    text-align: left;
-  }
-
-  .vipMessage .title .left span:nth-child(2) {
-    font-size: 12px;
-    display: block;
-    color: #409EFF;
-  }
-
-  .vipMessage  .title .right {
-    float: right;
-    width: 50px;
-    line-height: 26px;
-    background: #bda179;
-    margin-top: 32px;
-    font-size: 14px;
-    color: white;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-
   .newsContent {
     text-align: left;
     margin-left: 20px;
@@ -434,7 +293,70 @@
     color: #bda179;
     padding-right: 10px;
   }
-  .zhuren{
+  .zhuren,.yingyin,.friend{
     margin-top: 20px;
   }
+	.zhuren .jieshao, .yingyin .jieshao,.friend .jieshao{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		border-bottom: 1px solid #2a8d7e50;
+		overflow: hidden;
+	}
+	.zhuren .jieshao span:nth-child(1), .yingyin .jieshao span:nth-child(1), .friend .jieshao span:nth-child(1){
+		float: left;
+		font-size: 16px;
+	}
+	.zhuren .jieshao span:nth-child(2),.yingyin .jieshao span:nth-child(2){
+		float: right;
+		font-size: 16px;
+	}
+	.zhuren .detail{
+		margin-top: 20px;
+		overflow: hidden;
+	}
+	.zhuren .detail .block{
+		width: 90px;
+		float: left;
+		margin-right: 270px;
+		background: #D3DCE6;
+	}
+	.zhuren .detail .block:last-child{
+		margin-right: 10px;
+	}
+	
+	.zhuren .detail .block:nth-of-type(1){
+		margin-left: 15px;
+	}
+	.zhuren .detail .block img{
+		width: 100%;
+		height: 110px;
+	}
+	.yingyin .detail{
+		width: 100%;
+	}
+	.yingyin .detail ul{
+		overflow: hidden;
+		margin-left: 200px;
+		margin-top: 20px;
+	}
+	.yingyin .detail li{
+		float: left;
+		width: 200px;
+		height: 140px;
+		border: 1px dashed #2a8d7e50;
+	}
+	.yingyin .detail li img{
+	  width: 100%;
+		height: 100%;
+	}
+	.friend ul{
+		overflow: hidden;
+		margin-top: 20px;
+	}
+	.friend ul li{
+		float: left;
+		font-size: 16px;
+		margin-left: 10px;
+	}
 </style>

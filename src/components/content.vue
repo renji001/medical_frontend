@@ -1,11 +1,13 @@
 <template>
     <div class="container">
-      <el-tabs type="border-card">
+      <el-tabs>
         <el-tab-pane label="网站首页">
           <content-index></content-index>
         </el-tab-pane>
         <el-tab-pane label="关于协会">消息中心</el-tab-pane>
-        <el-tab-pane label="组织机构">角色管理</el-tab-pane>
+        <el-tab-pane label="组织机构">
+          <org-content></org-content>
+        </el-tab-pane>
         <el-tab-pane label="协会动态">定时任务补偿</el-tab-pane>
         <el-tab-pane label="学术交流">定时任务补偿</el-tab-pane>
         <el-tab-pane label="科普宣传">定时任务补偿</el-tab-pane>
@@ -20,10 +22,12 @@
 
 <script>
    import ContentIndex from './index/'
+   import OrgContent from './orgContent/'
     export default {
       name: "content",
       components: {
-        ContentIndex
+        ContentIndex,
+        OrgContent
       },
     }
 </script>

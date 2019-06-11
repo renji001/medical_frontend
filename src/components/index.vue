@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <el-container>
-      <el-header>
+      <el-header style="height: 100px;">
         <vue-header></vue-header>
       </el-header>
-      <el-main>
+      <el-main class="main">
         <vue-content></vue-content>
       </el-main>
       <el-footer></el-footer>
@@ -31,5 +31,8 @@
 </script>
 
 <style scoped>
-
+.el-header {
+		height: 100px;
+		padding: 0px;
+}
 </style>
