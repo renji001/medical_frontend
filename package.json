@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "element-ui": "^2.9.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
