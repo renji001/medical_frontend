@@ -9,6 +9,7 @@ import moment from 'moment'
 import * as filter from './filter.js'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/styles/index.css'
+import './assets/styles/common.css'
 import 'element-ui/lib/theme-chalk/base.css';
 // collapse 展开折叠
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';

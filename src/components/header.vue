@@ -20,14 +20,14 @@
 					</transition>
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="header">
 		  <div class="left">
 		    <img src="/static/images/logo.png" alt="">
 		    <span class="title">河南省消化医学学会</span>
 		  </div>
-		
+
 		  <div class="search">
 		    <el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
 		      <el-select v-model="select" slot="prepend" placeholder="全站内容" class="searchSelect">
@@ -67,8 +67,12 @@
 <style scoped>
 	.tabDetail{
 		background: #2A8D7E50;
-		height: 30px;
-		line-height: 30px;
+		height: 36px;
+		line-height: 36px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 	}
 	.tabDetailInner{
 		width: 1200px;
@@ -88,7 +92,7 @@
   .header {
     width: 1200px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 60px auto 20px;
   }
 
   .header .left{

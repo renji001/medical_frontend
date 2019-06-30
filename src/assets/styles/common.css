@@ -1,0 +1,19 @@
+.bannerText{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #2a8d7e50;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+.bannerText .title {
+   float: left;
+   font-size: 16px;
+ }
+.bannerText .more {
+  float: right;
+  font-size: 16px;
+}
+.indent {
+  text-indent: 2rem;
+}

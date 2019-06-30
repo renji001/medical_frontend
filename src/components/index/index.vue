@@ -4,12 +4,12 @@
 			<div class="left" style="width:200px">
 				<ul>
 					<li>通知公告</li>
-					<li>协会动态</li>
-					<li>会员服务</li>
+					<!--<li>协会动态</li>-->
+					<li>会员单位</li>
 					<li>专业委员会</li>
-					<li>学术交流</li>
+					<li>名医讲堂</li>
 					<li>科普宣传</li>
-					<li>癌症康复</li>
+					<!--<li>癌症康复</li>-->
 				</ul>
 			</div>
 			<div class="left" style="width: 800px;margin-right: 0px;">
@@ -19,11 +19,11 @@
 					</el-carousel-item>
 				</el-carousel>
 			</div>
-			<div class="left" style="width: 199px;height:300px;background: #eee;margin-right: 0px;">
-				
+			<div class="left" style="width: 159px;height:300px;background: #eee;margin-right: 0px;">
+
 			</div>
 		</div>
-   
+
     <div class="message">
       <div class="news">
         <div class="title">
@@ -87,7 +87,7 @@
           </ul>
         </div>
       </div>
-      </div>
+    </div>
     <div class="zhuren">
 			<div class="jieshao">
 				<span>主任委员介绍</span>
@@ -108,13 +108,13 @@
       <div class="detail">
 				<ul>
 					<li>
-						<img src="/static/images/yingyin1.jpeg" alt="">
+						<img src="/static/images/yingyin1.jpg" alt="">
 					</li>
 					<li>
-						<img src="/static/images/yingyin2.jpeg" alt="">
+						<img src="/static/images/yingyin2.jpg" alt="">
 					</li>
 					<li>
-						<img src="/static/images/yingyin3.jpeg" alt="">
+						<img src="/static/images/yingyin3.jpg" alt="">
 					</li>
 					<li>
 						<img src="/static/images/yingyin4.jpeg" alt="">
@@ -122,23 +122,8 @@
 				</ul>
 			</div>
     </div>
-  <div class="friend">
-  		<div class="jieshao">
-  			<span>友情链接</span>
-  		</div>
-      <div class="detail">
-  			<ul>
-  				<li>
-						<a href="http://fcc.zzu.edu.cn">郑州大学第一附属医院</a>
-  				</li>
-  				<li>
-						<a href="http://www.henancishan.org/index.html">河南省慈善总会</a>
-  				</li>
-  			</ul>
-  		</div>
-    </div>
 	</div>
-	
+
 </template>
 
 <script>
@@ -148,7 +133,7 @@
       return {
         picList:[{
 					id: 1,
-					img:'/static/images/banner.jpeg',
+					img:'/static/images/banner.jpg',
 				}],
 				zhurenList:[{
 					id: 1,
@@ -324,7 +309,7 @@
 	.zhuren .detail .block:last-child{
 		margin-right: 10px;
 	}
-	
+
 	.zhuren .detail .block:nth-of-type(1){
 		margin-left: 15px;
 	}
