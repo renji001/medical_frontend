@@ -74,25 +74,46 @@ export default {
           id: 9,
           name: "联系我们",
           path: 'lianxi'
+        },
+        {
+          id: 10,
+          name: "基金会",
+          path: ""
         }
       ],
       tabIndex: 1
     };
   },
+  created() {
+    var _this = this
+    _this.tabIndex = localStorage.getItem('tabDataIndex')
+    console.log(localStorage.getItem('tabDataIndex'))
+  },
   methods: {
     tabAdd(index,path) {
       this.tabIndex = index + 1;
-      this.$router.push(path)
+      this.$router.push(path);
+      localStorage.setItem('tabDataIndex', index)
+      // console.log(localStorage.getItem(tabDataIndex))
     }
   }
 };
 </script>
 
 <style scoped>
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  /*background: #eee;*/
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    /*background: #eee;*/
+  }
+}
+@media screen and (max-width: 1199px) {
+	.container {
+    width: 100%;
+    margin: 0 auto;
+    /*background: #eee;*/
+  }
 }
 .tabLink {
   width: 100%;

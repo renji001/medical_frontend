@@ -4,12 +4,10 @@
 			<div class="left" style="width:200px">
 				<ul>
 					<li>通知公告</li>
-					<!--<li>协会动态</li>-->
 					<li>会员单位</li>
 					<li>专业委员会</li>
 					<li>名医讲堂</li>
 					<li>科普宣传</li>
-					<!--<li>癌症康复</li>-->
 				</ul>
 			</div>
 			<div class="left" style="width: 800px;margin-right: 0px;">
@@ -20,7 +18,6 @@
 				</el-carousel>
 			</div>
 			<div class="left" style="width: 159px;height:300px;background: #eee;margin-right: 0px;">
-
 			</div>
 		</div>
 
@@ -170,6 +167,7 @@
 
 	.showPic{
 		overflow: hidden;
+    width: 1200px;
 	}
 	.showPic .left{
 		float: left;
@@ -202,6 +200,7 @@
 
   .message{
     overflow: hidden;
+    width: 1200px;
   }
   .news, .dongtai {
     float: left;
@@ -280,6 +279,7 @@
   }
   .zhuren,.yingyin,.friend{
     margin-top: 20px;
+    width: 1200px;
   }
 	.zhuren .jieshao, .yingyin .jieshao,.friend .jieshao{
 		width: 100%;
